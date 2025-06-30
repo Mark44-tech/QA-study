@@ -1,0 +1,29 @@
+2 tests  with valid and invalid data, using - Equivalent partitioning, Boundary values, Pairwise testing, Guessing errors
+
+Equivalent separation - email field test during registration
+Valid -mark14@gmail.com
+Expected result - successful registration
+Invalid - mark14gmail.com
+Expected result - should generate a registration error "incorrect email address"
+
+Limit values - Number of items in the order
+Valid - enter 1 item
+Expected result - minimum acceptable value, item is added to the cart
+Valid - enter 100 items
+Expected result - maximum acceptable value, item is added to the cart
+Invalid - enter 0
+Expected result - should display the error "minimum number of items is 1"
+Invalid - enter 101
+Expected result - should display the error "maximum number of items 100"
+
+Pair testing - password field test + repeat password
+Valid - password Qwerty324, repeat password Qwerty324
+Expected result - successful registration
+Invalid - password Qwerty324, repeat password Qwert
+Expected result: displays the error "repeat password does not match"
+
+Guessing errors: number of items in the cart
+Valid: 1
+Expected result: item is added
+Invalid: 05
+Expected result: displays the error "invalid number of items"
