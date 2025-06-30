@@ -1,0 +1,12 @@
+from 18 to 99 inclusive - Boundary Values Analysis
+1. value 17 - expected result "error" - below the minimum value
+2. value 18 - expected result "accepted" - minimum boundary value
+3. value 19 - expected result "accepted" - acceptable boundary value
+4. value 98 - expected result "accepted" - acceptable boundary value 
+5. value 99 - expected result "accepted" - maximum boundary value
+6. value 100 - expected result "error" - greater than the acceptable boundary value
+
+from 18 to 99 inclusive - Equivalence Partitioning
+1. value 5 - error less than 18
+2. value 55 - no error
+3. value 104 - error greater than 99
