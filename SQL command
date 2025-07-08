@@ -1,0 +1,7 @@
+Get all Testers from the Workers table, sorted by hire date
+1. SELECT * FROM Workers
+2.SELECT * FROM Workers WHERE profession = 'Тестувальник' ORDER BY hireDate ASC;
+
+Get the last 5 hired Testers
+1.SELECT * FROM Workers
+2.SELECT * FROM Workers WHERE profession = 'Тестувальник' ORDER BY hireDate DESC LIMIT 5;
